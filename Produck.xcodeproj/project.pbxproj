@@ -43,6 +43,7 @@
 		27D58EB81BA0484E00A33645 /* TechDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EB71BA0484E00A33645 /* TechDetailsTableViewCell.m */; };
 		27D58EBB1BA0585100A33645 /* TechDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EBA1BA0585100A33645 /* TechDetailsViewController.m */; };
 		27D58EBE1BA086E500A33645 /* QAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EBD1BA086E500A33645 /* QAViewController.m */; };
+		27D58EC11BA0D57200A33645 /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EC01BA0D57200A33645 /* CommentViewController.m */; };
 		6F4FE18D5DBA7644BFE3B0A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0A0788FE69336311323D43 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +124,8 @@
 		27D58EBA1BA0585100A33645 /* TechDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechDetailsViewController.m; sourceTree = "<group>"; };
 		27D58EBC1BA086E500A33645 /* QAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAViewController.h; sourceTree = "<group>"; };
 		27D58EBD1BA086E500A33645 /* QAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAViewController.m; sourceTree = "<group>"; };
+		27D58EBF1BA0D57200A33645 /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		27D58EC01BA0D57200A33645 /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
 		8B0A0788FE69336311323D43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1F35FDF50CF3B4181E2199 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -318,6 +321,8 @@
 				276EE5271B9CC11D0046864B /* Q&A Page */,
 				2715584E1B8748F40039E9C8 /* Technical Details Page */,
 				2715584F1B8749010039E9C8 /* Performance Page */,
+				27D58EBF1BA0D57200A33645 /* CommentViewController.h */,
+				27D58EC01BA0D57200A33645 /* CommentViewController.m */,
 			);
 			name = "Detail Page";
 			sourceTree = "<group>";
@@ -536,6 +541,7 @@
 				271558351B870E3D0039E9C8 /* FrostedViewController.m in Sources */,
 				275D21791B8465F700C0FFD0 /* SideMenuViewCell.m in Sources */,
 				276709541B94EB5E00344C03 /* CollectionViewCell.m in Sources */,
+				27D58EC11BA0D57200A33645 /* CommentViewController.m in Sources */,
 				2715583C1B8731560039E9C8 /* DetailPageTabBarController.m in Sources */,
 				275D21881B849A1900C0FFD0 /* CategoryPageViewController.m in Sources */,
 				271558531B8900C80039E9C8 /* ImagesCollectionViewCell.m in Sources */,

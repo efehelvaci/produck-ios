@@ -53,7 +53,7 @@ static NSString * const reuseIdentifierForCollectionViewCell = @"collectionViewC
         return CGSizeMake([[UIScreen mainScreen] bounds].size.width, 300);
     }
     
-    CGFloat widthOfMyTextBox = [[UIScreen mainScreen] bounds].size.width-30;
+    CGFloat widthOfMyTextBox = [[UIScreen mainScreen] bounds].size.width-95;
      
     NSString *commentText =  @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
     NSString *positivesCommentText = @"Acayip iyi bir şey ya acayiiip";
@@ -69,7 +69,7 @@ static NSString * const reuseIdentifierForCollectionViewCell = @"collectionViewC
 
     CGFloat totalHeight = commentTextsize.size.height + positivesCommentTextsize.size.height + negativesCommentTextsize.size.height;
 
-    return CGSizeMake([[UIScreen mainScreen] bounds].size.width-10, totalHeight+75);
+    return CGSizeMake([[UIScreen mainScreen] bounds].size.width-10, totalHeight+85);
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -101,7 +101,7 @@ static NSString * const reuseIdentifierForCollectionViewCell = @"collectionViewC
         cell.dateLabel.text = @"01.09.2015";
         cell.positiveCommentsLabel.text = @"Acayip iyi bir şey ya acayiiip";
         cell.negativeCommentsLabel.text = @"O kadar iyi değil değillll puanım 1";
-        cell.layer.borderWidth = 0.5f;
+        cell.layer.borderWidth = 0.2f;
         cell.layer.cornerRadius = 5.0f;
         
         return cell;

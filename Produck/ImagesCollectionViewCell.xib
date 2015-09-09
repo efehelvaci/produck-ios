@@ -12,8 +12,8 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="448" height="128"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProduckMainPageLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MYT-U7-PDu">
-                        <rect key="frame" x="0.0" y="0.0" width="448" height="128"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="example_produck_image" translatesAutoresizingMaskIntoConstraints="NO" id="MYT-U7-PDu">
+                        <rect key="frame" x="8" y="0.0" width="432" height="128"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </imageView>
                 </subviews>
@@ -22,8 +22,8 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="MYT-U7-PDu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="08g-XD-g8P"/>
-                <constraint firstItem="MYT-U7-PDu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7d4-xa-sbX"/>
-                <constraint firstAttribute="trailing" secondItem="MYT-U7-PDu" secondAttribute="trailing" id="i0p-Un-lKF"/>
+                <constraint firstItem="MYT-U7-PDu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="7d4-xa-sbX"/>
+                <constraint firstAttribute="trailing" secondItem="MYT-U7-PDu" secondAttribute="trailing" constant="8" id="i0p-Un-lKF"/>
                 <constraint firstAttribute="bottom" secondItem="MYT-U7-PDu" secondAttribute="bottom" id="uyC-6R-Qbi"/>
             </constraints>
             <size key="customSize" width="448" height="128"/>
@@ -34,6 +34,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="ProduckMainPageLogo" width="128" height="128"/>
+        <image name="example_produck_image" width="296" height="234"/>
     </resources>
 </document>
