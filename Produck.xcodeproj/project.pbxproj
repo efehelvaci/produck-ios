@@ -10,7 +10,6 @@
 		271558351B870E3D0039E9C8 /* FrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271558341B870E3D0039E9C8 /* FrostedViewController.m */; };
 		2715583C1B8731560039E9C8 /* DetailPageTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2715583B1B8731560039E9C8 /* DetailPageTabBarController.m */; };
 		2715583F1B8731F00039E9C8 /* DetailPageGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2715583E1B8731F00039E9C8 /* DetailPageGeneralViewController.m */; };
-		271558421B87320B0039E9C8 /* DetailPageTechnicalDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271558411B87320B0039E9C8 /* DetailPageTechnicalDetailsViewController.m */; };
 		271558451B8739760039E9C8 /* DetailPagePerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271558441B8739760039E9C8 /* DetailPagePerformanceViewController.m */; };
 		271558481B873B470039E9C8 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 271558471B873B470039E9C8 /* Toast.m */; };
 		2715584B1B873BA50039E9C8 /* CommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2715584A1B873BA50039E9C8 /* CommentView.m */; };
@@ -38,10 +37,12 @@
 		275D21901B849D3B00C0FFD0 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 275D218F1B849D3B00C0FFD0 /* Product.m */; };
 		276709541B94EB5E00344C03 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 276709521B94EB5E00344C03 /* CollectionViewCell.m */; };
 		276709551B94EB5E00344C03 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276709531B94EB5E00344C03 /* CollectionViewCell.xib */; };
-		276EE5321B9CC4980046864B /* QATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EE5311B9CC4980046864B /* QATableViewController.m */; };
 		276EE53A1B9CC87F0046864B /* QATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 276EE5391B9CC87F0046864B /* QATableViewCell.m */; };
 		27D162741B988B1900E36105 /* LoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D162731B988B1900E36105 /* LoginScreenViewController.m */; };
 		27D162781B98DC6500E36105 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D162771B98DC6500E36105 /* BaseNavigationController.m */; };
+		27D58EB81BA0484E00A33645 /* TechDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EB71BA0484E00A33645 /* TechDetailsTableViewCell.m */; };
+		27D58EBB1BA0585100A33645 /* TechDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EBA1BA0585100A33645 /* TechDetailsViewController.m */; };
+		27D58EBE1BA086E500A33645 /* QAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EBD1BA086E500A33645 /* QAViewController.m */; };
 		6F4FE18D5DBA7644BFE3B0A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0A0788FE69336311323D43 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +64,6 @@
 		2715583B1B8731560039E9C8 /* DetailPageTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPageTabBarController.m; sourceTree = "<group>"; };
 		2715583D1B8731F00039E9C8 /* DetailPageGeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPageGeneralViewController.h; sourceTree = "<group>"; };
 		2715583E1B8731F00039E9C8 /* DetailPageGeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPageGeneralViewController.m; sourceTree = "<group>"; };
-		271558401B87320B0039E9C8 /* DetailPageTechnicalDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPageTechnicalDetailsViewController.h; sourceTree = "<group>"; };
-		271558411B87320B0039E9C8 /* DetailPageTechnicalDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPageTechnicalDetailsViewController.m; sourceTree = "<group>"; };
 		271558431B8739760039E9C8 /* DetailPagePerformanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailPagePerformanceViewController.h; sourceTree = "<group>"; };
 		271558441B8739760039E9C8 /* DetailPagePerformanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailPagePerformanceViewController.m; sourceTree = "<group>"; };
 		271558461B873B470039E9C8 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
@@ -112,14 +111,18 @@
 		276709511B94EB5E00344C03 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		276709521B94EB5E00344C03 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		276709531B94EB5E00344C03 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		276EE5301B9CC4980046864B /* QATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QATableViewController.h; sourceTree = "<group>"; };
-		276EE5311B9CC4980046864B /* QATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QATableViewController.m; sourceTree = "<group>"; };
 		276EE5381B9CC87F0046864B /* QATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QATableViewCell.h; sourceTree = "<group>"; };
 		276EE5391B9CC87F0046864B /* QATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QATableViewCell.m; sourceTree = "<group>"; };
 		27D162721B988B1900E36105 /* LoginScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginScreenViewController.h; sourceTree = "<group>"; };
 		27D162731B988B1900E36105 /* LoginScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginScreenViewController.m; sourceTree = "<group>"; };
 		27D162761B98DC6500E36105 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		27D162771B98DC6500E36105 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		27D58EB61BA0484E00A33645 /* TechDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechDetailsTableViewCell.h; sourceTree = "<group>"; };
+		27D58EB71BA0484E00A33645 /* TechDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechDetailsTableViewCell.m; sourceTree = "<group>"; };
+		27D58EB91BA0585100A33645 /* TechDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechDetailsViewController.h; sourceTree = "<group>"; };
+		27D58EBA1BA0585100A33645 /* TechDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechDetailsViewController.m; sourceTree = "<group>"; };
+		27D58EBC1BA086E500A33645 /* QAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAViewController.h; sourceTree = "<group>"; };
+		27D58EBD1BA086E500A33645 /* QAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAViewController.m; sourceTree = "<group>"; };
 		8B0A0788FE69336311323D43 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1F35FDF50CF3B4181E2199 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,8 +185,10 @@
 		2715584E1B8748F40039E9C8 /* Technical Details Page */ = {
 			isa = PBXGroup;
 			children = (
-				271558401B87320B0039E9C8 /* DetailPageTechnicalDetailsViewController.h */,
-				271558411B87320B0039E9C8 /* DetailPageTechnicalDetailsViewController.m */,
+				27D58EB91BA0585100A33645 /* TechDetailsViewController.h */,
+				27D58EBA1BA0585100A33645 /* TechDetailsViewController.m */,
+				27D58EB61BA0484E00A33645 /* TechDetailsTableViewCell.h */,
+				27D58EB71BA0484E00A33645 /* TechDetailsTableViewCell.m */,
 			);
 			name = "Technical Details Page";
 			sourceTree = "<group>";
@@ -332,8 +337,8 @@
 		276EE5271B9CC11D0046864B /* Q&A Page */ = {
 			isa = PBXGroup;
 			children = (
-				276EE5301B9CC4980046864B /* QATableViewController.h */,
-				276EE5311B9CC4980046864B /* QATableViewController.m */,
+				27D58EBC1BA086E500A33645 /* QAViewController.h */,
+				27D58EBD1BA086E500A33645 /* QAViewController.m */,
 				276EE5381B9CC87F0046864B /* QATableViewCell.h */,
 				276EE5391B9CC87F0046864B /* QATableViewCell.m */,
 			);
@@ -519,15 +524,15 @@
 				275D21751B8465D800C0FFD0 /* SideMenuViewController.m in Sources */,
 				271558451B8739760039E9C8 /* DetailPagePerformanceViewController.m in Sources */,
 				27D162741B988B1900E36105 /* LoginScreenViewController.m in Sources */,
-				271558421B87320B0039E9C8 /* DetailPageTechnicalDetailsViewController.m in Sources */,
 				271558481B873B470039E9C8 /* Toast.m in Sources */,
 				2715584B1B873BA50039E9C8 /* CommentView.m in Sources */,
 				2715583F1B8731F00039E9C8 /* DetailPageGeneralViewController.m in Sources */,
 				275D21821B8471AE00C0FFD0 /* NetworkManager.m in Sources */,
+				27D58EBB1BA0585100A33645 /* TechDetailsViewController.m in Sources */,
 				275D21901B849D3B00C0FFD0 /* Product.m in Sources */,
 				271558581B8900D80039E9C8 /* CommentsCollectionViewCell.m in Sources */,
 				275D214B1B84607900C0FFD0 /* AppDelegate.m in Sources */,
-				276EE5321B9CC4980046864B /* QATableViewController.m in Sources */,
+				27D58EB81BA0484E00A33645 /* TechDetailsTableViewCell.m in Sources */,
 				271558351B870E3D0039E9C8 /* FrostedViewController.m in Sources */,
 				275D21791B8465F700C0FFD0 /* SideMenuViewCell.m in Sources */,
 				276709541B94EB5E00344C03 /* CollectionViewCell.m in Sources */,
@@ -536,6 +541,7 @@
 				271558531B8900C80039E9C8 /* ImagesCollectionViewCell.m in Sources */,
 				275D21481B84607900C0FFD0 /* main.m in Sources */,
 				275D21851B84734800C0FFD0 /* ProductCategory.m in Sources */,
+				27D58EBE1BA086E500A33645 /* QAViewController.m in Sources */,
 				275D218C1B849A3500C0FFD0 /* CategoryPageViewCell.m in Sources */,
 				275D216E1B8460D700C0FFD0 /* MainPageViewController.m in Sources */,
 				27D162781B98DC6500E36105 /* BaseNavigationController.m in Sources */,

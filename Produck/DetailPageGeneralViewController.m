@@ -33,6 +33,7 @@ static NSString * const reuseIdentifierForCollectionViewCell = @"collectionViewC
     
     self.productNameLabel.text = self.product.Name;
 
+    self.navigationController.hidesBarsOnSwipe = YES;
 
     [self.commentsCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CollectionViewCell class]) bundle:nil]                                             forCellWithReuseIdentifier:reuseIdentifierForCollectionViewCell];
     [self.commentsCollectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CommentsCollectionViewCell class]) bundle:nil]
@@ -51,7 +52,24 @@ static NSString * const reuseIdentifierForCollectionViewCell = @"collectionViewC
     {
         return CGSizeMake([[UIScreen mainScreen] bounds].size.width, 300);
     }
-    return CGSizeMake([[UIScreen mainScreen] bounds].size.width-10, 300);
+    
+    CGFloat widthOfMyTextBox = [[UIScreen mainScreen] bounds].size.width-30;
+     
+    NSString *commentText =  @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    NSString *positivesCommentText = @"Acayip iyi bir şey ya acayiiip";
+    NSString *negativesCommentText = @"O kadar iyi değil değillll puanım 1";
+
+    CGSize constraint = CGSizeMake(widthOfMyTextBox, MAXFLOAT);
+
+    NSDictionary *attributes = [NSDictionary dictionaryWithObject:[UIFont systemFontOfSize:14.0] forKey:NSFontAttributeName];
+
+    CGRect commentTextsize = [commentText boundingRectWithSize:constraint options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
+    CGRect positivesCommentTextsize = [positivesCommentText boundingRectWithSize:constraint options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
+    CGRect negativesCommentTextsize = [negativesCommentText boundingRectWithSize:constraint options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
+
+    CGFloat totalHeight = commentTextsize.size.height + positivesCommentTextsize.size.height + negativesCommentTextsize.size.height;
+
+    return CGSizeMake([[UIScreen mainScreen] bounds].size.width-10, totalHeight+75);
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -78,7 +96,11 @@ static NSString * const reuseIdentifierForCollectionViewCell = @"collectionViewC
         CommentsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifierForComments forIndexPath:indexPath];
         
         cell.userNameLabel.text = @"Efe Helvacı";
-        cell.commentLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        cell.commentLabel.text = @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+        cell.locationLabel.text = @"Miyendis";
+        cell.dateLabel.text = @"01.09.2015";
+        cell.positiveCommentsLabel.text = @"Acayip iyi bir şey ya acayiiip";
+        cell.negativeCommentsLabel.text = @"O kadar iyi değil değillll puanım 1";
         cell.layer.borderWidth = 0.5f;
         cell.layer.cornerRadius = 5.0f;
         

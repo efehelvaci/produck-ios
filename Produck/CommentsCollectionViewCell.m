@@ -11,9 +11,8 @@
 @implementation CommentsCollectionViewCell
 
 - (void)awakeFromNib {
-    self.userPhotoImageView.layer.cornerRadius = 42.0f;
-    self.userPhotoImageView.layer.borderWidth = 2.0f;
-    self.userPhotoImageView.layer.borderColor = [UIColor greenColor].CGColor;
+    self.userPhotoImageView.layer.borderWidth = 1.0f;
+    self.userPhotoImageView.layer.borderColor = [UIColor grayColor].CGColor;
 }
 
 @end

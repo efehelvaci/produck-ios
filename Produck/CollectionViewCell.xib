@@ -25,6 +25,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="ARN-2F-58s" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2eE-Kk-24z"/>
                 <constraint firstAttribute="bottom" secondItem="ARN-2F-58s" secondAttribute="bottom" id="RZd-1W-Vh2"/>

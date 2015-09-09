@@ -14,10 +14,12 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProduckMainPageLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MYT-U7-PDu">
                         <rect key="frame" x="0.0" y="0.0" width="448" height="128"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="MYT-U7-PDu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="08g-XD-g8P"/>
                 <constraint firstItem="MYT-U7-PDu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7d4-xa-sbX"/>

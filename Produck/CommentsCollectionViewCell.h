@@ -13,5 +13,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *commentLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *userPhotoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *positiveCommentsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *negativeCommentsLabel;
 
 @end

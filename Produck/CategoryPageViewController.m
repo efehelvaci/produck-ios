@@ -41,7 +41,6 @@ static NSInteger lastClickedCell;
     [[self collectionView]addSubview:self.spinner];
     [self.spinner startAnimating];
 
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"SearchButton"] style:UIBarButtonItemStylePlain target:self action:nil];
     self.navigationItem.title = @"Produck";
     
     self.refreshControl = [[UIRefreshControl alloc] init];
