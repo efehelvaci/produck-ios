@@ -36,7 +36,7 @@
 {
     CGFloat widthOfMyTextBox = [[UIScreen mainScreen] bounds].size.width-30;
     
-    NSString *cellText = @"ASDJASDJASJDASJDQWDLKAJSDKLJWQLasdasdasdDASDASDDKDJASDHKWQHDKJASHDKJQWHKDJAHSJDHASJKDHSAJDHASJDHSAJKDH";
+    NSString *cellText = @"Isındığında soğutmak için ne yapabilirim?";
     //set the desired size of your textbox
     CGSize constraint = CGSizeMake(widthOfMyTextBox, MAXFLOAT);
     //set your text attribute dictionary
@@ -65,7 +65,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     QATableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"questionCell" forIndexPath:indexPath];
     
-    cell.questionLabel.text = @"ASDJASDJASJDASJDQWDLKAJSDKLJWQLasdasdasdDASDASDDKDJASDHKWQHDKJASHDKJQWHKDJAHSJDHASJKDHSAJDHASJDHSAJKDH";
+    cell.questionLabel.text = @"Isındığında soğutmak için ne yapabilirim?";
     
     return cell;
 }

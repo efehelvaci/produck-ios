@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailPageTabBarController.h"
 
-@interface TechDetailsViewController : UIViewController
+@interface TechDetailsViewController : UIViewController <ActiveViewController>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 

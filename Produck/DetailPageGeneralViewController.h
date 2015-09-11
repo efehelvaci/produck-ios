@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailPageTabBarController.h"
 
-@interface DetailPageGeneralViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface DetailPageGeneralViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UIPopoverPresentationControllerDelegate, ActiveViewController>
 
+@property (strong, nonatomic) IBOutlet UICollectionView *imagesCollectionView;
 @property (weak, nonatomic) IBOutlet UICollectionView *commentsCollectionView;
-@property (weak, nonatomic) IBOutlet UILabel *productNameLabel;
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *imagesCollectionViewHeight;
 
 @end

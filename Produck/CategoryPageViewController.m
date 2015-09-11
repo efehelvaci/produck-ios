@@ -139,7 +139,14 @@ static NSInteger lastClickedCell;
 {
     lastClickedCell = cellRow;
     
-    [self performSegueWithIdentifier:@"CategoryToDetailPageSeg" sender:self];
+    DetailPageTabBarController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"detailPageTabBarController"];
+    vc.product = [self.products objectAtIndex:lastClickedCell];
+    
+    UINavigationController *navigationController =
+    [[UINavigationController alloc] initWithRootViewController:vc];
+
+    [self.navigationController presentViewController:navigationController animated:YES completion:nil];
+//    [self performSegueWithIdentifier:@"CategoryToDetailPageSeg" sender:self];
 }
 
 

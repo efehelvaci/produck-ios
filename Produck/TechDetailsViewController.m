@@ -8,12 +8,12 @@
 
 #import "TechDetailsViewController.h"
 #import "TechDetailsTableViewCell.h"
-#import "DetailPageTabBarController.h"
 #import "Product.h"
 
 @interface TechDetailsViewController ()
 
 @property (strong, nonatomic) Product *product;
+@property (strong, nonatomic) DetailPageTabBarController *tabBarController;
 
 @end
 
@@ -22,13 +22,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    DetailPageTabBarController *tabBarController = (DetailPageTabBarController *) self.tabBarController;
-    self.product = tabBarController.product;
+    self.tabBarController = [DetailPageTabBarController new];
+    self.tabBarController = (DetailPageTabBarController *) self.tabBarController;
+    self.product = self.tabBarController.product;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self.tabBarController setButtonDelegate:self vc:1];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -49,6 +52,11 @@
     cell.detail.text = @"Intel A5780 Super bir islemci knk";
     
     return cell;
+}
+
+-(void)rightBarButtonItemClicked
+{
+    
 }
 
 

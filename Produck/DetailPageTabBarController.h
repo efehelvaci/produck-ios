@@ -9,8 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "Product.h"
 
+@protocol ActiveViewController <NSObject>
+
+-(void)rightBarButtonItemClicked;
+
+@end
+
 @interface DetailPageTabBarController : UITabBarController
 
 @property (strong, nonatomic) Product *product;
+@property (strong, nonatomic) id <ActiveViewController> buttonDelegate;
+
+-(void)setButtonDelegate:(id<ActiveViewController>)buttonDelegate vc:(NSInteger)vc;
 
 @end

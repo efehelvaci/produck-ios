@@ -10,4 +10,9 @@
 
 @interface CommentViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextView *commentTextView;
+@property (weak, nonatomic) IBOutlet UITextView *positiveCommentTextView;
+@property (weak, nonatomic) IBOutlet UITextView *negativeCommentTextView;
+
+
 @end
