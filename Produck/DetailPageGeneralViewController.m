@@ -117,7 +117,7 @@ static NSString * const reuseIdentifierForComments = @"commentsCell";
     {
         CGPoint translation = [scrollView.panGestureRecognizer translationInView:scrollView];
         
-        if(translation.y > 1 && self.imagesCollectionViewHeight.constant<=220 && self.commentsCollectionView.contentOffset.y<=200)
+        if(translation.y > 1 && self.imagesCollectionViewHeight.constant<=200 && self.commentsCollectionView.contentOffset.y<=200)
         {
             self.imagesCollectionViewHeight.constant += 10;
             if(self.commentsCollectionView.contentOffset.y==0) {
@@ -126,7 +126,7 @@ static NSString * const reuseIdentifierForComments = @"commentsCell";
             }
             if(self.imagesCollectionView.alpha <= 1 && self.imagesCollectionView.alpha >= 0) self.imagesCollectionView.alpha += 0.02f;
             [self.imagesCollectionView reloadData];
-        } else if(translation.y < -1 && self.imagesCollectionViewHeight.constant>=0)
+        } else if(translation.y < -30 && self.imagesCollectionViewHeight.constant>=0)
         {
             self.imagesCollectionViewHeight.constant -= 5.0f;
             if(self.imagesCollectionView.alpha <= 2 && self.imagesCollectionView.alpha >= 0) self.imagesCollectionView.alpha -= 0.01f;

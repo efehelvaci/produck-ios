@@ -149,7 +149,7 @@
                                                     <constraint firstAttribute="width" secondItem="YaL-QH-our" secondAttribute="height" multiplier="43:17" id="OIM-iL-M1X"/>
                                                 </constraints>
                                             </imageView>
-                                            <searchBar contentMode="redraw" placeholder="Ürün ara" backgroundImage="NotificationBackgroundWarning.png" translatesAutoresizingMaskIntoConstraints="NO" id="ybK-YV-cvF">
+                                            <searchBar contentMode="redraw" placeholder="Search product" backgroundImage="NotificationBackgroundWarning.png" translatesAutoresizingMaskIntoConstraints="NO" id="ybK-YV-cvF">
                                                 <rect key="frame" x="0.0" y="169.5" width="600" height="44"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </searchBar>
@@ -171,7 +171,7 @@
                                                     <outlet property="delegate" destination="2ZI-Kt-zzk" id="6Px-8o-xIR"/>
                                                 </connections>
                                             </collectionView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En çok puan alan 10 ürün" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaB-Xf-I9C">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest scores" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaB-Xf-I9C">
                                                 <rect key="frame" x="15" y="238.5" width="577" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -225,13 +225,13 @@
                                                     <outlet property="delegate" destination="2ZI-Kt-zzk" id="KLp-Sm-1iS"/>
                                                 </connections>
                                             </collectionView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En çok oylanan 10 ürün" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl1-fe-DGx">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most voted" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl1-fe-DGx">
                                                 <rect key="frame" x="15" y="610.5" width="577" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En çok yorumlanan 10 ürün" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y05-9f-iC0">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most commented" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y05-9f-iC0">
                                                 <rect key="frame" x="15" y="420.5" width="577" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -291,7 +291,7 @@
                                     <constraint firstAttribute="height" constant="30" id="sbB-9J-zjK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Giriş yap">
+                                <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -523,7 +523,7 @@
             </objects>
             <point key="canvasLocation" x="723" y="373"/>
         </scene>
-        <!--Performans-->
+        <!--Performance-->
         <scene sceneID="VsT-Ev-EyM">
             <objects>
                 <viewController id="uda-58-BYm" customClass="DetailPagePerformanceViewController" sceneMemberID="viewController">
@@ -547,13 +547,13 @@
                             <constraint firstAttribute="trailing" secondItem="7Mp-7m-Klx" secondAttribute="trailing" id="lHi-oJ-5Mx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Performans" image="Performance" id="ezv-nu-L6Z"/>
+                    <tabBarItem key="tabBarItem" title="Performance" image="Performance" id="ezv-nu-L6Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAU-xq-Q0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2382" y="1086"/>
         </scene>
-        <!--Soru Cevap-->
+        <!--Questions & Answers-->
         <scene sceneID="lEc-U4-cRj">
             <objects>
                 <viewController id="Dso-hU-jag" customClass="QAViewController" sceneMemberID="viewController">
@@ -623,7 +623,7 @@
                             <constraint firstAttribute="trailing" secondItem="28O-9x-FOu" secondAttribute="trailing" id="SJQ-bS-5E9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Soru Cevap" image="QA" id="xdl-jd-Q6r"/>
+                    <tabBarItem key="tabBarItem" title="Questions &amp; Answers" image="QA" id="xdl-jd-Q6r"/>
                     <connections>
                         <outlet property="tableView" destination="28O-9x-FOu" id="mZy-hL-Or6"/>
                     </connections>
@@ -632,7 +632,7 @@
             </objects>
             <point key="canvasLocation" x="2382" y="1754"/>
         </scene>
-        <!--Genel Bakış-->
+        <!--General Look-->
         <scene sceneID="IHE-9q-l7Y">
             <objects>
                 <viewController id="qKp-gk-VVo" customClass="DetailPageGeneralViewController" sceneMemberID="viewController">
@@ -649,7 +649,7 @@
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VNA-m5-KpS" userLabel="Comments Collection View">
                                 <rect key="frame" x="0.0" y="220" width="600" height="331"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wIR-cM-xhV">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -719,7 +719,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Genel Bakış" image="GeneralLook" id="rhz-IM-DiK"/>
+                    <tabBarItem key="tabBarItem" title="General Look" image="GeneralLook" id="rhz-IM-DiK"/>
                     <connections>
                         <outlet property="commentsCollectionView" destination="VNA-m5-KpS" id="Hhr-NJ-cO8"/>
                         <outlet property="imagesCollectionView" destination="PvF-2t-DBa" id="KKQ-6a-f0D"/>
@@ -730,7 +730,7 @@
             </objects>
             <point key="canvasLocation" x="2394" y="-265"/>
         </scene>
-        <!--Teknik Özellikler-->
+        <!--Technical Details-->
         <scene sceneID="Jng-fB-HZX">
             <objects>
                 <viewController id="tJ3-1X-vkr" customClass="TechDetailsViewController" sceneMemberID="viewController">
@@ -817,7 +817,7 @@
                             <constraint firstItem="H7J-S0-gL5" firstAttribute="top" secondItem="8it-6a-jLi" secondAttribute="bottom" id="r3n-M4-3L8"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Teknik Özellikler" image="TechDetails" id="H8a-Gv-CDp"/>
+                    <tabBarItem key="tabBarItem" title="Technical Details" image="TechDetails" id="H8a-Gv-CDp"/>
                     <connections>
                         <outlet property="tableView" destination="H7J-S0-gL5" id="o06-bQ-oN0"/>
                     </connections>

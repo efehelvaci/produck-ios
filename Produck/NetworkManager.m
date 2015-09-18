@@ -115,13 +115,13 @@
         [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
             switch (status) {
                 case AFNetworkReachabilityStatusReachableViaWiFi:
-                    [TSMessage showNotificationWithTitle:@"Bravo!"
-                                                subtitle:@"Internet canavar knk."
+                    [TSMessage showNotificationWithTitle:NSLocalizedString(@"ReachableInternetTitle", nil)
+                                                subtitle:NSLocalizedString(@"ReachableInternetSubtitle", nil)
                                                     type:TSMessageNotificationTypeSuccess];
                     break;
                 case AFNetworkReachabilityStatusNotReachable:
-                    [TSMessage showNotificationWithTitle:@"Ow shet"
-                                                subtitle:@"Internet gitti amk"
+                    [TSMessage showNotificationWithTitle:NSLocalizedString(@"NotReachableInternetTitle", nil)
+                                                subtitle:NSLocalizedString(@"NotReachableInternetSubtitle", nil)
                                                     type:TSMessageNotificationTypeError];
                 default:
                     break;

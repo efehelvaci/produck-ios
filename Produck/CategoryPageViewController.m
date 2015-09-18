@@ -48,20 +48,7 @@ static NSInteger lastClickedCell;
                   forControlEvents:UIControlEventValueChanged];
     [self.collectionView addSubview:self.refreshControl];
     
-    if([self.productCategoryName isEqualToString:@"tablets"])
-    {
-        self.navigationItem.title = @"Tabletler";
-    }
-    else if([self.productCategoryName isEqualToString:@"cellPhones"])
-    {
-        self.navigationItem.title = @"Cep telefonları";
-    }
-    else if([self.productCategoryName isEqualToString:@"laptops"])
-    {
-        self.navigationItem.title = @"Dizüstü Bilgisayarlar";
-    }
-    
-
+    self.navigationItem.title = NSLocalizedString(self.productCategoryName, nil);
     
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CategoryPageViewCell class]) bundle:nil]
           forCellWithReuseIdentifier:reuseIdentifier];

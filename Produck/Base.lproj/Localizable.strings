@@ -5,3 +5,76 @@
   Created by Efe Helvaci on 13/09/15.
   Copyright (c) 2015 Produck. All rights reserved.
 */
+
+"MainPageTitle" = "Homepage";
+"Categories" = "Categories";
+"cellPhones" = "Cell Phones";
+"tablets" = "Tablets";
+"laptops" = "Laptops";
+"ReachableInternetTitle" = "Hurray!";
+"ReachableInternetSubtitle" = "We have connection again";
+"NotReachableInternetTitle" = "Ups!";
+"NotReachableInternetSubtitle" = "We lost the internet connection";
+
+/* Laptop Tech Page */
+
+"generalFeatures" = "General Features";
+"manufacturer" = "Manufacturer";
+"colorOptions" = "Color options";
+"width" = "Width";
+"height" = "Height";
+"length" = "Length";
+"weight" = "Weight";
+
+"displayFeatures" = "Display";
+"processorFeatures" = "Processor";
+"batteryFeatures" = "Battery";
+"memoryFeatures" = "Memory";
+"storageFeatures" = "Storage";
+"connectivityFeatures" = "Connectivity";
+"platformFeatures" = "Platform";
+"otherFeatures" = "Other";
+"extraFeatures" = "Extra Features";
+
+"size" = "Size";
+"resolution" = "Resolution";
+"type" = "Type";
+"graphicCardManufacturer" = "Graphic Card Manufacturer";
+"graphicCardModel" = "Graphic Card Model";
+"graphicMemoryAccesibility" = "Graphic Memory Accessibility";
+
+"processorManufacturer" = "Processor Manufacturer";
+"processorModel" = "Processor Model";
+"processorSpeed" = "Processor Speed";
+"processorCore" = "Processor Core";
+
+"cellCount" = "Battery Cell Count";
+"chemistry" = "Battery Chemistry";
+"capacity" = "Battery Capacity";
+"maxPower" = "Battery Max Power";
+
+"ram" = "RAM";
+"ramCapacity" = "RAM Capacity";
+"ramSpeed" = "RAM Speed";
+"ramType" = "RAM Type";
+"ramMaxCapacity" = "RAM Max Capacity";
+"ramHomeCount" = "RAM Home Count";
+
+"capacity" = "Storage Capacity";
+"opticDriverType" = "Optic Driver Type";
+
+"wifi" = "Wi-Fi";
+"bluetooth" = "Bluetooth";
+"ethernetTechnology" = "Ethernet Technology";
+"hdmi" = "HDMI";
+"vga" = "VGA";
+"usb2" = "USB 2.0";
+"usb3" = "USB 3.0";
+
+"operatingSystem" = "Operating System";
+"operatingSystemBits" = "Operating System Bits";
+
+"includedAccesories" = "Included Accesories";
+"sound" = "Sound";
+"webcam" = "Webcam";
+"microphone" = "Microphone";

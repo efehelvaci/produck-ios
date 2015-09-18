@@ -78,7 +78,7 @@ static NSString * const reuseIdentifier = @"SideMenuCell";
             
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 0, 24)];
             NSDictionary *underlineAttribute = @{NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)};
-            label.attributedText = [[NSMutableAttributedString alloc]initWithString:@"Kategoriler" attributes:underlineAttribute];
+            label.attributedText = [[NSMutableAttributedString alloc]initWithString:NSLocalizedString(@"Categories", nil) attributes:underlineAttribute];
             label.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
             label.backgroundColor = [UIColor clearColor];
             label.textColor = [UIColor colorWithRed:162/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
@@ -160,21 +160,8 @@ static NSString * const reuseIdentifier = @"SideMenuCell";
     }
     else
     {
-        if([[self.productCategories objectAtIndex:indexPath.row] isEqualToString:@"tablets"])
-        {
-            cell.itemNameLabel.text = @"Tabletler";
-            cell.itemIcon.image = [UIImage imageNamed:@"TabletIcon"];
-        }
-        else if([[self.productCategories objectAtIndex:indexPath.row] isEqualToString:@"cellPhones"])
-        {
-            cell.itemNameLabel.text = @"Cep telefonları";
-            cell.itemIcon.image = [UIImage imageNamed:@"CellphoneIcon"];
-        }
-        else if([[self.productCategories objectAtIndex:indexPath.row] isEqualToString:@"laptops"])
-        {
-            cell.itemNameLabel.text = @"Dizüstü Bilgisayarlar";
-            cell.itemIcon.image = [UIImage imageNamed:@"LaptopIcon"];
-        }
+        cell.itemNameLabel.text = NSLocalizedString(self.productCategories[indexPath.row], nil);
+        cell.itemIcon.image = [UIImage imageNamed:self.productCategories[indexPath.row]];
     }
     
     return cell;

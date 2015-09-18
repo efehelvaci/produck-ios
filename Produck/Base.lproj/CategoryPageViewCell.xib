@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -13,38 +13,54 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="511" height="257"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4mI-xF-qWF">
-                        <rect key="frame" x="0.0" y="0.0" width="160" height="257"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="160" id="wSe-sT-ybS"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrr-FO-qZO">
-                        <rect key="frame" x="168" y="8" width="335" height="19.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrr-FO-qZO">
+                        <rect key="frame" x="158" y="8" width="345" height="22"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Product name">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="16" name="AvenirNextCondensed-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8n-sl-Ais">
-                        <rect key="frame" x="168" y="36" width="335" height="14.5"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8n-sl-Ais">
+                        <rect key="frame" x="158" y="35" width="345" height="19.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Manifacturer">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="AvenirNextCondensed-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nai-JP-dnx">
-                        <rect key="frame" x="179" y="197" width="316" height="29"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <state key="normal" title="Ürünü incele"/>
+                        <rect key="frame" x="169" y="194" width="326" height="32"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                        <state key="normal" title="Go to product">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
                         <connections>
                             <action selector="detailButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="az8-Rc-biu"/>
                         </connections>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4mI-xF-qWF">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="257"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="wSe-sT-ybS"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.5433926906193447" green="0.66733743686868685" blue="0.42793824894575255" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Nai-JP-dnx" secondAttribute="bottom" constant="31" id="6Vi-Y2-SkU"/>
                 <constraint firstItem="4mI-xF-qWF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" constant="-8" id="BNX-i5-Nqd"/>
@@ -55,7 +71,7 @@
                 <constraint firstItem="Nai-JP-dnx" firstAttribute="leading" secondItem="4mI-xF-qWF" secondAttribute="trailing" constant="19" id="bZ4-sl-5eN"/>
                 <constraint firstItem="nrr-FO-qZO" firstAttribute="leading" secondItem="V8n-sl-Ais" secondAttribute="leading" id="c5d-0K-kAK"/>
                 <constraint firstAttribute="bottomMargin" secondItem="4mI-xF-qWF" secondAttribute="bottom" constant="-8" id="clG-WQ-KT2"/>
-                <constraint firstItem="V8n-sl-Ais" firstAttribute="top" secondItem="nrr-FO-qZO" secondAttribute="bottom" constant="8.5" id="lMk-5u-OCz"/>
+                <constraint firstItem="V8n-sl-Ais" firstAttribute="top" secondItem="nrr-FO-qZO" secondAttribute="bottom" constant="5" id="lMk-5u-OCz"/>
                 <constraint firstAttribute="trailing" secondItem="Nai-JP-dnx" secondAttribute="trailing" constant="16" id="p8s-5Q-G0s"/>
                 <constraint firstItem="nrr-FO-qZO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="zto-NI-n0K"/>
             </constraints>

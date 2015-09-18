@@ -24,16 +24,16 @@
 "rhz-IM-DiK.title" = "Genel Bakış";
 
 /* Class = "UILabel"; text = "En çok oylanan 10 ürün"; ObjectID = "rl1-fe-DGx"; */
-"rl1-fe-DGx.text" = "En çok oylanan 10 ürün";
+"rl1-fe-DGx.text" = "En çok oylananlar";
 
 /* Class = "UITabBarItem"; title = "Soru Cevap"; ObjectID = "xdl-jd-Q6r"; */
 "xdl-jd-Q6r.title" = "Soru Cevap";
 
 /* Class = "UILabel"; text = "En çok yorumlanan 10 ürün"; ObjectID = "y05-9f-iC0"; */
-"y05-9f-iC0.text" = "En çok yorumlanan 10 ürün";
+"y05-9f-iC0.text" = "En çok yorumlananlar";
 
 /* Class = "UILabel"; text = "En çok puan alan 10 ürün"; ObjectID = "yaB-Xf-I9C"; */
-"yaB-Xf-I9C.text" = "En çok puan alan 10 ürün";
+"yaB-Xf-I9C.text" = "En çok puan alan";
 
 /* Class = "UISearchBar"; placeholder = "Ürün ara"; ObjectID = "ybK-YV-cvF"; */
 "ybK-YV-cvF.placeholder" = "Ürün ara";

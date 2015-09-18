@@ -58,7 +58,7 @@ static NSString * const reuseIdentifier = @"MainPageCategoriesCell";
     self.collectionView2.layer.cornerRadius = 3.0f;
     self.collectionView3.layer.cornerRadius = 3.0f;
     
-    self.navigationItem.title = @"Anasayfa";
+    self.navigationItem.title = NSLocalizedString(@"MainPageTitle", nil);
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:0.0/255 green:102.0/255 blue:0.0/255 alpha:1.0f]];
     
     [self.collectionView1 registerNib:[UINib nibWithNibName:NSStringFromClass([MainPageCategoriesCell class]) bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];

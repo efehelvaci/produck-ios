@@ -12,7 +12,7 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="524" height="108"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaptopIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qh1-v4-W10">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laptops" translatesAutoresizingMaskIntoConstraints="NO" id="qh1-v4-W10">
                         <rect key="frame" x="0.0" y="0.0" width="179" height="108"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="179" id="9Kd-5Y-aa6"/>
@@ -25,13 +25,13 @@
                             <constraint firstAttribute="width" constant="330" id="0aO-nU-fHs"/>
                         </constraints>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="tintColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="E1d-Cy-xnz" firstAttribute="leading" secondItem="qh1-v4-W10" secondAttribute="trailing" constant="7" id="Gc1-29-cn3"/>
                 <constraint firstAttribute="bottom" secondItem="qh1-v4-W10" secondAttribute="bottom" id="KtD-D0-6nw"/>
@@ -49,6 +49,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="LaptopIcon" width="48" height="48"/>
+        <image name="laptops" width="48" height="48"/>
     </resources>
 </document>
