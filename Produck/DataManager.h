@@ -14,6 +14,8 @@
 @property (nonatomic, retain) NSArray *cellphonesFeatures;
 @property (nonatomic, retain) NSArray *tabletFeatures;
 
+@property (nonatomic, retain) NSArray *laptopFeaturesIcons;
+
 + (id)sharedManager;
 
 @end

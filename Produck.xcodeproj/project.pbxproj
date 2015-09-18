@@ -42,6 +42,7 @@
 		27D58EB81BA0484E00A33645 /* TechDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EB71BA0484E00A33645 /* TechDetailsTableViewCell.m */; };
 		27D58EBB1BA0585100A33645 /* TechDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EBA1BA0585100A33645 /* TechDetailsViewController.m */; };
 		27D58EBE1BA086E500A33645 /* QAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D58EBD1BA086E500A33645 /* QAViewController.m */; };
+		27DDEB5E1BACAB5E008A272D /* TechDetailExtraTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DDEB5D1BACAB5E008A272D /* TechDetailExtraTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		27F7FE521BA5AFAA0006C304 /* CategoryPageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F7FE541BA5AFAA0006C304 /* CategoryPageViewCell.xib */; };
 		27F7FE5D1BA5B2120006C304 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27F7FE5F1BA5B2120006C304 /* Localizable.strings */; };
 		6F4FE18D5DBA7644BFE3B0A2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B0A0788FE69336311323D43 /* libPods.a */; };
@@ -124,6 +125,8 @@
 		27D58EBA1BA0585100A33645 /* TechDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechDetailsViewController.m; sourceTree = "<group>"; };
 		27D58EBC1BA086E500A33645 /* QAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAViewController.h; sourceTree = "<group>"; };
 		27D58EBD1BA086E500A33645 /* QAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAViewController.m; sourceTree = "<group>"; };
+		27DDEB5C1BACAB5E008A272D /* TechDetailExtraTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechDetailExtraTableViewCell.h; sourceTree = "<group>"; };
+		27DDEB5D1BACAB5E008A272D /* TechDetailExtraTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechDetailExtraTableViewCell.m; sourceTree = "<group>"; };
 		27F7FE501BA5AF970006C304 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		27F7FE511BA5AF970006C304 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		27F7FE531BA5AFAA0006C304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CategoryPageViewCell.xib; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				27D58EBA1BA0585100A33645 /* TechDetailsViewController.m */,
 				27D58EB61BA0484E00A33645 /* TechDetailsTableViewCell.h */,
 				27D58EB71BA0484E00A33645 /* TechDetailsTableViewCell.m */,
+				27DDEB5C1BACAB5E008A272D /* TechDetailExtraTableViewCell.h */,
+				27DDEB5D1BACAB5E008A272D /* TechDetailExtraTableViewCell.m */,
 			);
 			name = "Technical Details Page";
 			sourceTree = "<group>";
@@ -447,7 +452,7 @@
 		275D213A1B84607900C0FFD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Produck;
 				TargetAttributes = {
 					275D21411B84607900C0FFD0 = {
@@ -567,6 +572,7 @@
 				27D58EBE1BA086E500A33645 /* QAViewController.m in Sources */,
 				275D218C1B849A3500C0FFD0 /* CategoryPageViewCell.m in Sources */,
 				275D216E1B8460D700C0FFD0 /* MainPageViewController.m in Sources */,
+				27DDEB5E1BACAB5E008A272D /* TechDetailExtraTableViewCell.m in Sources */,
 				27D162781B98DC6500E36105 /* BaseNavigationController.m in Sources */,
 				277D2ADF1BA335190095126F /* ImagesCollectionViewCell.m in Sources */,
 				276EE53A1B9CC87F0046864B /* QATableViewCell.m in Sources */,
@@ -657,6 +663,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -723,6 +730,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Produck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.produck.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -734,6 +742,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Produck/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.produck.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -752,6 +761,7 @@
 				);
 				INFOPLIST_FILE = ProduckTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.produck.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Produck.app/Produck";
 			};
@@ -767,6 +777,7 @@
 				);
 				INFOPLIST_FILE = ProduckTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.produck.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Produck.app/Produck";
 			};

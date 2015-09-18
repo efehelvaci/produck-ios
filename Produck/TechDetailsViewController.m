@@ -8,7 +8,9 @@
 
 #import "TechDetailsViewController.h"
 #import "TechDetailsTableViewCell.h"
+#import "TechDetailExtraTableViewCell.h"
 #import "Product.h"
+#import "DataManager.h"
 
 @interface TechDetailsViewController ()
 
@@ -27,6 +29,17 @@
     self.product = self.tabBarController.product;
 }
 
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [[[[DataManager sharedManager] laptopFeatures] objectAtIndex:section] objectAtIndex:0];
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    UIView *view = [[UIView alloc] init];
+    return view;
+}
+
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -36,22 +49,31 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return [[[DataManager sharedManager] laptopFeatures] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    //return self.questions.count;
-    return 5;
+    return [[[[DataManager sharedManager] laptopFeatures] objectAtIndex:section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    TechDetailsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"techDetailCell" forIndexPath:indexPath];
-    
-    cell.detailName.text = @"İşlemci";
-    cell.detail.text = @"Intel A5780 Super bir islemci knk";
-    
-    return cell;
+    if([[[[DataManager sharedManager] laptopFeatures] objectAtIndex:indexPath.section] count]-1 != indexPath.row){
+        TechDetailsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"techDetailCell" forIndexPath:indexPath];
+        
+        cell.detailName.text = [[[[DataManager sharedManager] laptopFeatures] objectAtIndex:indexPath.section] objectAtIndex:indexPath.row+1];
+        cell.detailImage.image = [UIImage imageNamed:[[[[DataManager sharedManager] laptopFeaturesIcons] objectAtIndex:indexPath.section] objectAtIndex:indexPath.row]];
+        cell.detail.text = @"";
+        
+        return cell;
+    }
+    else
+    {
+        TechDetailExtraTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"techExtraDetailCell" forIndexPath:indexPath];
+        cell.extrasLabel.text = @"Automatic Compression Technology 2.0";
+        
+        return cell;
+    }
 }
 
 -(void)rightBarButtonItemClicked
