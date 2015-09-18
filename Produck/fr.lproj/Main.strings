@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3Oc-xm-bsV"; */
+"3Oc-xm-bsV.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FLL-0H-dbt"; */
+"FLL-0H-dbt.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Technical Details"; ObjectID = "H8a-Gv-CDp"; */
+"H8a-Gv-CDp.title" = "Technical Details";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ofl-Db-gzd"; */
+"Ofl-Db-gzd.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Performance"; ObjectID = "ezv-nu-L6Z"; */
+"ezv-nu-L6Z.title" = "Performance";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "hbI-Ou-WQd"; */
+"hbI-Ou-WQd.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = ":"; ObjectID = "ics-QB-dWA"; */
+"ics-QB-dWA.text" = ":";
+
+/* Class = "UITabBarItem"; title = "General Look"; ObjectID = "rhz-IM-DiK"; */
+"rhz-IM-DiK.title" = "General Look";
+
+/* Class = "UILabel"; text = "Most voted"; ObjectID = "rl1-fe-DGx"; */
+"rl1-fe-DGx.text" = "Most voted";
+
+/* Class = "UITabBarItem"; title = "Questions & Answers"; ObjectID = "xdl-jd-Q6r"; */
+"xdl-jd-Q6r.title" = "Questions & Answers";
+
+/* Class = "UILabel"; text = "Most commented"; ObjectID = "y05-9f-iC0"; */
+"y05-9f-iC0.text" = "Most commented";
+
+/* Class = "UILabel"; text = "Highest scores"; ObjectID = "yaB-Xf-I9C"; */
+"yaB-Xf-I9C.text" = "Highest scores";
+
+/* Class = "UISearchBar"; placeholder = "Search product"; ObjectID = "ybK-YV-cvF"; */
+"ybK-YV-cvF.placeholder" = "Search product";

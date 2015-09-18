@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3Oc-xm-bsV"; */
+"3Oc-xm-bsV.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FLL-0H-dbt"; */
+"FLL-0H-dbt.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Teknik Özellikler"; ObjectID = "H8a-Gv-CDp"; */
+"H8a-Gv-CDp.title" = "Teknik Özellikler";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ofl-Db-gzd"; */
+"Ofl-Db-gzd.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Performans"; ObjectID = "ezv-nu-L6Z"; */
+"ezv-nu-L6Z.title" = "Performans";
+
+/* Class = "UIButton"; normalTitle = "Giriş yap"; ObjectID = "hbI-Ou-WQd"; */
+"hbI-Ou-WQd.normalTitle" = "Giriş yap";
+
+/* Class = "UILabel"; text = ":"; ObjectID = "ics-QB-dWA"; */
+"ics-QB-dWA.text" = ":";
+
+/* Class = "UITabBarItem"; title = "Genel Bakış"; ObjectID = "rhz-IM-DiK"; */
+"rhz-IM-DiK.title" = "Genel Bakış";
+
+/* Class = "UILabel"; text = "En çok oylanan 10 ürün"; ObjectID = "rl1-fe-DGx"; */
+"rl1-fe-DGx.text" = "En çok oylanan 10 ürün";
+
+/* Class = "UITabBarItem"; title = "Soru Cevap"; ObjectID = "xdl-jd-Q6r"; */
+"xdl-jd-Q6r.title" = "Soru Cevap";
+
+/* Class = "UILabel"; text = "En çok yorumlanan 10 ürün"; ObjectID = "y05-9f-iC0"; */
+"y05-9f-iC0.text" = "En çok yorumlanan 10 ürün";
+
+/* Class = "UILabel"; text = "En çok puan alan 10 ürün"; ObjectID = "yaB-Xf-I9C"; */
+"yaB-Xf-I9C.text" = "En çok puan alan 10 ürün";
+
+/* Class = "UISearchBar"; placeholder = "Ürün ara"; ObjectID = "ybK-YV-cvF"; */
+"ybK-YV-cvF.placeholder" = "Ürün ara";
