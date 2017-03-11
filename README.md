@@ -1,2 +1,2 @@
-# produck-ios
-Produck iOS App
+# Produck
+Produck iOS Application with Swift.
